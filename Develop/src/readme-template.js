@@ -1,6 +1,7 @@
+const generatePage = (answers) => {
+    return `
 
-
-#sadasd
+#${answers.projectTitle}
 
 
 ## Table of Contents:
@@ -16,37 +17,43 @@
 <a name="Description></a>
 ## 1.Description
 
-undefined
+${answers.Description}
 
 ## 2.Installation
 
-relverv
+${answers.installationInstructions}
 
 
 ## 3.Usage
 
-lervk;e
+${answers.usageInformation}
 
 
 ## 4.License
 
-a,b,c
+${answers.license}
 
 
 ## 5.Contribution
 
-e;rlvke
+${answers.contributionGuidelines}
 
 
 ## 6.Tests
 
-e;rlvk
+${answers.testInstructions}
 
 ## 7.Questions
 
 If you have further questions or information, please reach out through my Github or Email:
 
-;lkc
-s;dlk
+${answers.githubUsername}
+${answers.email}
 
-    
+    `
+  };
+
+
+
+  
+  module.exports = generatePage;
