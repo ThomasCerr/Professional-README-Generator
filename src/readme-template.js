@@ -1,54 +1,52 @@
-const generatePage = (answers) => {
+
+const generateMarkdown = (answers) => {
     return `
+
 
 #${answers.projectTitle}
 
+## Description
+${answers.projectDescription}
 
 ## Table of Contents:
 
-1.[Description] (#Description)
-2.[Installation] (#Installation)
-3.[Usage] (#Usage)
-4.[License] (#License)
-5.[Contribution] (#Contribution)
-6.[Tests] (#Tests)
-7.[Questions] (#Questions)
 
-<a name="Description></a>
-## 1.Description
+[Installation] (#Installation)
+[Usage] (#Usage)
+[License] (#License)
+[Contribution] (#Contribution)
+[Tests] (#Tests)
+[Questions] (#Questions)
 
-${answers.Description}
-
-## 2.Installation
+## Installation
 
 ${answers.installationInstructions}
 
 
-## 3.Usage
+## Usage
 
 ${answers.usageInformation}
 
 
-## 4.License
+## License
 
 ${answers.license}
 
 
-## 5.Contribution
+## Contribution
 
 ${answers.contributionGuidelines}
 
 
-## 6.Tests
+## Tests
 
 ${answers.testInstructions}
 
-## 7.Questions
+## Questions
 
-If you have further questions or information, please reach out through my Github or Email:
+If you have further questions or information, please reach out to me at ${answers.email} :
 
-${answers.githubUsername}
-${answers.email}
+You can see more of my work at ${answers.githubUsername}
 
     `
   };
@@ -56,4 +54,6 @@ ${answers.email}
 
 
   
-  module.exports = generatePage;
+  
+  module.exports = generateMarkdown;
+  

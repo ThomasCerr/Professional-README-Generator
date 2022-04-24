@@ -1,7 +1,9 @@
 // TODO: Include packages needed for this application
 const fs = require('fs');
-var inquirer = require('inquirer');
-const generatePage = require('./src/readme-template.js');
+const util = require('util');
+const inquirer = require('inquirer');
+const generateMarkdown = require('./utils/generateMarkdown');
+
 
 // TODO: Create an array of questions for user input
 // const questions = [];
@@ -58,7 +60,7 @@ inquirer
   .then((answers) => {
       console.log(answers)
       // TODO: Create a function to write README file
-    fs.writeFileSync('readme.md', generatePage(answers))
+    fs.writeFileSync('readme.md', generateMarkdown(answers))
   });
 
 

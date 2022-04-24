@@ -17,7 +17,7 @@ const generatePage = (answers) => {
 <a name="Description></a>
 ## 1.Description
 
-${answers.Description}
+${answers.projectDescription}
 
 ## 2.Installation
 
