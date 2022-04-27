@@ -30,7 +30,7 @@ ${answers.usageInformation}
 
 ## License
 
-${answers.license}
+>${answers.license}
 
 
 ## Contribution

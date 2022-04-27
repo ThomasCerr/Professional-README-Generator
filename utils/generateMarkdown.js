@@ -15,46 +15,40 @@ function generateMarkdown(answers) {
   return `# ${answers.projectTitle}
 
 
-
-  ## Table of Contents:
+# Table of Contents:
+1. [Description] (#Description)
+2. [Installation] (#Installation)
+3. [Usage] (#Usage)
+4. [License] (#License)
+5. [Contribution] (#Contribution)
+6. [Tests] (#Tests)
+7. [Questions] (#Questions)
   
-  * [Description] (#Description)
-  * [Installation] (#Installation)
-  * [Usage] (#Usage)
-  * [License] (#License)
-  * [Contribution] (#Contribution)
-  * [Tests] (#Tests)
-  * [Questions] (#Questions)
+## Description
   
-  ## Description
+  ${answers.projectDescription}
   
-  ${answers.Description}
-  
-  ## 2.Installation
+## Installation
   
   ${answers.installationInstructions}
   
-  
-  ## 3.Usage
+## Usage
   
   ${answers.usageInformation}
   
-  
-  ## 4.License
+## License
   
   ${answers.license}
   
-  
-  ## 5.Contribution
+## Contribution
   
   ${answers.contributionGuidelines}
   
-  
-  ## 6.Tests
+## Tests
   
   ${answers.testInstructions}
   
-  ## 7.Questions
+## Questions
   
   If you have further questions or information, please reach out through my Github or Email:
   
