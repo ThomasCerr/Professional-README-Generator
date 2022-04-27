@@ -44,7 +44,7 @@ inquirer
     type: 'checkbox',
     name: 'license',
     message: 'Select your license:',
-    choices: ['a', 'b', 'c']
+    choices: ['Apache 2.0', 'BSD 3-Clause', 'GNU GPL V3', 'MIT', 'None']
 },
 {
     type: 'input',
@@ -60,7 +60,7 @@ inquirer
   .then((answers) => {
       console.log(answers)
       // TODO: Create a function to write README file
-    fs.writeFileSync('readme.md', generateMarkdown(answers))
+    fs.writeFileSync('README.md', generateMarkdown(answers))
   });
 
 
