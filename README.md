@@ -38,6 +38,8 @@ THEN I am taken to the corresponding section of the README
 ```
 ## Mockup
 
-<img src= "https://github.com/ThomasCerr/Professional-README-Generator/blob/main/mockup/Untitled_%20Apr%2028%2C%202022%204_38%20PM.webm">
+https://user-images.githubusercontent.com/99366289/165843382-90bc9c9a-664f-4edf-a130-ecfa3315cc5f.mp4
+
+
 
 
