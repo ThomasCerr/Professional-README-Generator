@@ -24,16 +24,16 @@ return ''
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
   if (license === 'Apache 2.0'){
-  return "Licensed under Apache 2.0 (https://www.apache.org/licenses/LICENSE-2.0)";
+  return "Licensed under [Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0)";
   
   }else if (license === 'BSD 3-Clause'){
-  return 'Licensed under BSD 3-Clause (https://opensource.org/licenses/BSD-3-Clause)';
+  return 'Licensed under [BSD 3-Clause](https://opensource.org/licenses/BSD-3-Clause)';
   
   }else if (license === 'GNU GPL V3'){
-  return 'Licensed under GNU GPL V3 (https://www.gnu.org/licenses/gpl-3.0.en.html)';
+  return 'Licensed under [GNU GPL V3](https://www.gnu.org/licenses/gpl-3.0.en.html)';
  
   }else if (license === 'MIT'){
-  return 'Licensed under MIT (https://opensource.org/licenses/MIT)';
+  return 'Licensed under [MIT](https://opensource.org/licenses/MIT)';
   
   }else if (license === 'None'){
   return ''
@@ -111,10 +111,8 @@ ${licenseLink}
   
 ## Questions
   
-  If you have further questions or information, please reach out through my Github or Email:
+  If you have further questions or information, please reach out through my Github at ${answers.githubUsername}, or by Email:${answers.email}.
   
-  ${answers.githubUsername}
-  ${answers.email}
   
       `
     };

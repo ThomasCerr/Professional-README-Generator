@@ -6,7 +6,6 @@ const generateMarkdown = require('./utils/generateMarkdown');
 
 
 // TODO: Create an array of questions for user input
-// const questions = [];
 
 inquirer
   .prompt([
@@ -60,7 +59,7 @@ inquirer
   .then((answers) => {
       console.log(answers)
       // TODO: Create a function to write README file
-    fs.writeFileSync('README.md', generateMarkdown(answers))
+    fs.writeFileSync('./src/README.md', generateMarkdown(answers))
   });
 
 
